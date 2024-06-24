@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    font-size: 20px;
  }
 
  h1{
@@ -71,4 +73,14 @@ li a:active {
 
 .fa:hover {
     color: #2E8B57;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: grey;
 }
