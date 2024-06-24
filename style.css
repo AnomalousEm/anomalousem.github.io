@@ -57,3 +57,18 @@ li a:active {
     max-height: 50%;
     border: 5px solid #2E8B57;
 }
+
+.socialIcons{
+    position: absolute;
+    bottom: 0;
+}
+
+.fa {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #2E8B57;
+}
