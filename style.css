@@ -26,3 +26,8 @@ li a:hover {
     background-color: #3F704D;
     color: white;
 }
+
+div.ex1{
+    float: right;
+    width: 75%;
+}
