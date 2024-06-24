@@ -51,3 +51,9 @@ li a:active {
     float: right;
     width: 70%;
 }
+
+.Emily {
+    max-width: 50%;
+    max-height: 50%;
+    border: 5px solid #2E8B57;
+}
