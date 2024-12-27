@@ -20,7 +20,7 @@ body {
     overflow: auto;
  }
 
-ul {
+.menuList {
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -51,8 +51,9 @@ li a:active {
 
 .homeDiv{
     float: right;
-    width: 70%;
+    width: 68%;
     padding-right: 40px;
+    padding-left: 0px;
 }
 
 .Emily {
@@ -85,3 +86,17 @@ h3 {
     margin-top: 0;
     color: grey;
 }
+
+.certList {
+    margin-left:10px;
+    padding-left:0;
+    font-size: 14px;
+    list-style-type: circle;
+ }
+
+ .skillList {
+    margin-left:10px;
+    padding-left:0;
+    font-size: 14px;
+    list-style-type: circle;
+ }
