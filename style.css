@@ -52,6 +52,7 @@ li a:active {
 .homeDiv{
     float: right;
     width: 70%;
+    padding-right: 40px;
 }
 
 .Emily {
