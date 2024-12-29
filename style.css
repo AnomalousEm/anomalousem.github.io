@@ -105,3 +105,16 @@ h3 {
     font-size: 14px;
     list-style-type: circle;
  }
+
+ .credly a {
+    background-color:#2E8B57;
+    padding: 10px;
+    width: fit-content;
+    color: whitesmoke;
+    font-size:20px;
+    text-decoration: none;
+ }
+
+ .credly a:hover{
+    background: #292929;
+ }
