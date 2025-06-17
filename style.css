@@ -1,6 +1,5 @@
 .emilyheadshot {
     float: left;
-    margin-right: 20px;
     max-width: 40%;
     height: auto; }
 
@@ -19,13 +18,13 @@ h1 {
     font-variant: normal;
     font-weight: 700; 
     margin-bottom: 0;
-    line-height: 20px; }
+    line-height: 16px; }
 
 h3 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 15.4px; 
+    line-height: 10px; 
     color: grey; }
 
 blockquote { 
@@ -40,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
+    line-height: 1.3;
     font-size: 14px;
     color: whitesmoke; }
 
@@ -79,27 +78,33 @@ body {
     background-color: #2E8B57;
     color: whitesmoke; }
 
-.ci-issa {
+.pagesection {
     background-color: #292929;
     color: whitesmoke;
     padding: 10px;
     height: auto;
     width: 50%; }
 
-.ci-issa h2{
+.pagesection h2{
     color:#deffec;
 }
 
-.ci-issa h3{
+.pagesection h3{
     color: #bdbdbd;
 }
 
-.ci-issa a {
+.pagesection a {
     color: #2E8B57;
 }
 
-.ci-issa .button{
+.pagesection .button{
     color: white;
+}
+
+#home {
+    float: right;
+    width: 50%;
+    padding: 20px;
 }
 
 .button{
