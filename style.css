@@ -1,9 +1,8 @@
 .emilyheadshot {
     float: left;
     margin-right: 20px;
-    max-width: 50%;
-    height: auto;
-}
+    max-width: 40%;
+    height: auto; }
 
 h1 { 
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
@@ -11,7 +10,7 @@ h1 {
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 28px;
+    line-height: 26.4px;
     color: #2E8B57 }
 
  h2 {
@@ -20,15 +19,14 @@ h1 {
     font-variant: normal;
     font-weight: 700; 
     margin-bottom: 0;
-    line-height: 22px;
-}
+    line-height: 20px; }
 
 h3 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 18px; 
-    color: grey;}
+    line-height: 15.4px; 
+    color: grey; }
 
 blockquote { 
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
@@ -38,19 +36,13 @@ blockquote {
     font-weight: 400; 
     line-height: 30px; }
 
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
     font-size: 14px;
-    color: whitesmoke;
-}
-
-
-
-
+    color: whitesmoke; }
 
  .menuDiv{
     background-color: #292929;
@@ -60,10 +52,13 @@ body {
     width: 27%;
     height: 100%;
     position: fixed;
-    overflow: auto;
- }
+    overflow: auto; }
 
 .menuList {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+    font-style: normal; 
+    font-variant: normal;
+    font-size: clamp(1.25rem, 1.25vw, 1.5rem);
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -71,8 +66,13 @@ body {
     height: 100%;
     position: fixed;
     overflow: auto;
-    font-weight: bold;
-}
+    font-weight: bold; }
+
+
+
+
+
+
 
 li a {
     text-align: center;
