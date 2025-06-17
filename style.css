@@ -65,10 +65,11 @@ li a:active {
     color: black;
 }
 
-.Emily {
+.emilyheadshot {
+    float: left;
+    margin-right: 20px;
     max-width: 50%;
-    max-height: 50%;
-    border: 5px solid #2E8B57;
+    height: auto;
 }
 
 .socialIcons{
