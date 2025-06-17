@@ -83,34 +83,42 @@ body {
     color: whitesmoke;
     padding: 10px;
     height: auto;
-    width: 50%;
-    padding: 20px;
- }
+    padding: 20px; }
 
 .pagesection h2{
-    color:#deffec;
-}
+    color:#deffec; }
 
 .pagesection h3{
-    color: #bdbdbd;
-}
+    color: #bdbdbd; }
 
 .pagesection a {
-    color: #2E8B57;
-}
+    color: #2E8B57; }
 
 .pagesection .button{
-    color: white;
-}
+    color: white; }
 
 #home {
     float: right;
-    width: 50%;
+    width: 50%; }
+
+#ci {
+    width: 50%; }
+
+#softwaretools {
+    width: 44%;
+    height: 40%;
+    float: left;
+}
+
+#languages {
+    width: 44%;
+    height: 40%;
+    float: right;
 }
 
 .button{
     background-color:#2E8B57;
-    padding: 6px;
+    padding: 8px;
     width: fit-content;
     color: whitesmoke;
     font-size:20px;
