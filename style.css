@@ -107,14 +107,16 @@ body {
 #softwaretools {
     width: 44%;
     height: 40%;
-    float: left;
-}
+    float: left; }
 
 #languages {
     width: 44%;
     height: 40%;
-    float: right;
-}
+    float: right; }
+
+#certification {
+    width: fit-content;
+    height: auto; }
 
 .button{
     background-color:#2E8B57;
@@ -128,6 +130,9 @@ body {
     font-weight: 700;
     text-decoration: none;
     line-height: 45px; }
+
+.button:hover{
+    background: #292929; }
 
 
 
@@ -175,17 +180,4 @@ body {
     padding-left:0;
     font-size: 14px;
     list-style-type: circle;
- }
-
- .credly a {
-    background-color:#2E8B57;
-    padding: 10px;
-    width: fit-content;
-    color: whitesmoke;
-    font-size:20px;
-    text-decoration: none;
- }
-
- .credly a:hover{
-    background: #292929;
  }
