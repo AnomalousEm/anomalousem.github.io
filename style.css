@@ -80,10 +80,27 @@ body {
     color: whitesmoke; }
 
 .ci-issa {
-    background-color: white;
+    background-color: #292929;
+    color: whitesmoke;
     padding: 10px;
     height: auto;
     width: 50%; }
+
+.ci-issa h2{
+    color:#deffec;
+}
+
+.ci-issa h3{
+    color: #bdbdbd;
+}
+
+.ci-issa a {
+    color: #2E8B57;
+}
+
+.ci-issa .button{
+    color: white;
+}
 
 .button{
     background-color:#2E8B57;
