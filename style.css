@@ -58,7 +58,7 @@ body {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
     font-style: normal; 
     font-variant: normal;
-    font-size: clamp(1.25rem, 1.25vw, 1.5rem);
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -68,29 +68,38 @@ body {
     overflow: auto;
     font-weight: bold; }
 
-
-
-
-
-
-
-li a {
+.menuList li a {
     text-align: center;
     display: block;
     color: whitesmoke;
     padding: 8px;
-    text-decoration: none;
-}
+    text-decoration: none; }
 
-li a:hover {
+.menuList li a:hover {
     background-color: #2E8B57;
-    color: whitesmoke;
-}
+    color: whitesmoke; }
 
-li a:active {
-    background-color: #555;
+.ci-issa {
+    background-color: white;
+    padding: 10px;
+    height: auto;
+    width: 50%; }
+
+.button{
+    background-color:#2E8B57;
+    padding: 4px;
+    width: fit-content;
     color: whitesmoke;
-}
+    font-size:20px;
+    text-decoration: none; }
+
+
+
+
+
+
+
+
 
 .homeDiv{
     float: right;
@@ -99,10 +108,7 @@ li a:active {
     padding-left: 2%;
     background-color: #deffec;
     height: 100vh;
-    color: black;
-}
-
-
+    color: black; }
 
 .socialIcons{
     position: absolute;
@@ -146,13 +152,4 @@ li a:active {
 
  .credly a:hover{
     background: #292929;
- }
-
- .commlinks{
-    background-color:#2E8B57;
-    padding: 4px;
-    width: fit-content;
-    color: whitesmoke;
-    font-size:20px;
-    text-decoration: none;
  }
