@@ -114,6 +114,10 @@ body {
     height: 40%;
     float: right; }
 
+#member {
+    margin-right: 2%;
+}
+
 #certification {
     width: fit-content;
     height: auto; }
