@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AnomalousEm | Security Engineering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Emily Shader (AnomalousEm) – Security engineer skilled in detection, cloud, incident response, and architecture." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #d4d4d8;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    .terminal-window {
+      border: 2px solid #22c55e;
+      background-color: #000;
+      border-radius: 0.75rem;
+    }
+    .terminal-header {
+      border-bottom: 2px solid #22c55e;
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+    .terminal-body {
+      padding: 1rem 1.25rem 1.5rem;
+      font-size: 1rem;
+    }
+    a {
+      transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+    }
+    .social-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 1.75;
+    }
+
+    /* Smooth scroll + offset for sticky header */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px; /* adjust if header height changes */
+    }
+    :target {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body class="mono antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER -->
+    <header class="border-b border-green-500/40 bg-black/90 sticky top-0 z-20">
+      <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <!-- Brand -->
+        <a href="#top" class="flex items-center gap-2">
+          <span class="text-green-400 text-2xl">❯</span>
+          <span class="text-lg font-semibold text-green-300">AnomalousEm</span>
+        </a>
+
+        <!-- NAV -->
+        <nav class="hidden md:flex items-center gap-6 text-base text-gray-200">
+          <a href="#about" class="hover:text-green-400">about</a>
+          <a href="#experience" class="hover:text-green-400">experience</a>
+          <a href="#skills" class="hover:text-green-400">skills</a>
+          <a href="#resources" class="hover:text-green-400">resources</a>
+          <a href="#blog" class="hover:text-green-400">blog</a>
+          <a href="#support" class="hover:text-green-400">support</a>
+          <a href="#contact" class="hover:text-green-400">contact</a>
+        </nav>
+
+        <!-- Social + Resume -->
+        <div class="flex items-center gap-4">
+          <div class="flex gap-3 text-green-400">
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://medium.com/@YOUR_MEDIUM_HANDLE" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="Medium">
+              <i data-lucide="book-open-text"></i>
+            </a>
+            <a href="https://x.com/YOUR_TWITTER" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="X">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+          <a href="YOUR_RESUME_URL.pdf"
+             class="px-4 py-2 border border-green-500 text-green-300 rounded hover:bg-green-500 hover:text-black text-base">
+            résumé
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="top" class="border-b border-green-500/40">
+      <div class="mx-auto max-w-5xl px-6 py-16 grid gap-10 md:grid-cols-[1.3fr,1fr] items-center">
+        <div>
+          <p class="text-sm text-green-400 mb-3">emily@anomalousem:~$ whoami</p>
+          <h1 class="text-5xl text-gray-50 mb-3">Emily Shader</h1>
+          <p class="text-xl text-green-300 mb-6">Cybersecurity Engineer</p>
+          <p class="text-lg text-gray-200 mb-5">
+            I’m a security engineer who moves comfortably across detection, cloud, IR, and architecture.
+            My focus is on building defenses that work — technically, operationally, and humanly.
+          </p>
+          <p class="text-base text-gray-400 mb-4">
+            Focus: security engineering · cloud &amp; identity · incident response · SIEM &amp; detection
+          </p>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <a href="#resources"
+               class="px-4 py-2 border border-green-500 rounded text-base text-green-300 hover:bg-green-500 hover:text-black">
+              view_resources.sh
+            </a>
+            <a href="#blog"
+               class="px-4 py-2 border border-green-500 rounded text-base text-green-300 hover:bg-green-500 hover:text-black">
+              tail -f medium.log
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+          <div class="terminal-window w-full max-w-sm">
+            <div class="terminal-header flex items-center justify-between text-gray-300">
+              <span>emily@anomalousem: ~/logo.jpg</span>
+              <span class="text-green-400 text-sm">online</span>
+            </div>
+            <div class="terminal-body flex flex-col items-center">
+              <!-- Your logo -->
+              <img src="anomalousem-logo.jpg"
+                   alt="AnomalousEm logo"
+                   class="h-48 w-48 rounded-full object-cover mb-4 border-2 border-green-500/70" />
+              <p class="text-sm text-gray-300 text-center">
+                “security, but make it human-readable”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ cat about.txt
+          </div>
+          <div class="terminal-body space-y-5 text-lg">
+            <p>
+              I’m a well-rounded <span class="text-green-300">security engineer</span> with roots in
+              detection and incident response, but I thrive wherever technical systems and human workflows meet.
+            </p>
+            <p>
+              My experience spans <span class="text-green-300">SIEM architecture</span>,
+              <span class="text-green-300">cloud and identity security</span>,
+              <span class="text-green-300">threat modeling</span>, and <span class="text-green-300">response operations</span>.
+            </p>
+            <p>
+              I lead security programs that scale — integrating defensive strategy with automation and clear communication.
+            </p>
+            <p>
+              Outside of work, I help lead <span class="text-green-300">ISSA Kentuckiana</span>,
+              curating talks and content for our local InfoSec community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ ls experience/
+          </div>
+          <div class="terminal-body space-y-6 text-base">
+            <div>
+              <p class="text-green-300 text-xl">
+                ./humana — Senior Security Engineer · 20XX–present
+              </p>
+              <ul class="list-disc list-inside text-gray-200 ml-4 mt-2 space-y-1">
+                <li>Lead cross-domain engineering across detection, cloud, and IR.</li>
+                <li>Develop high-fidelity detections and improve security telemetry quality.</li>
+                <li>Collaborate across platform and operations teams to embed controls in design.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-green-300 text-xl">
+                ./ibm — Security Pre-Sales Engineer · 20XX–20XX
+              </p>
+              <p class="text-gray-200 ml-4">
+                Partnered with enterprise clients to evaluate and implement IBM security solutions,
+                translating architecture and risk requirements into concrete designs.
+              </p>
+            </div>
+            <div>
+              <p class="text-green-300 text-xl">
+                ./lge-ku — Security Analyst · 20XX–20XX
+              </p>
+              <p class="text-gray-200 ml-4">
+                Conducted hands-on monitoring and response in a regulated energy environment,
+                collaborating with IT and OT to improve visibility and incident workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ cat skills.json
+          </div>
+          <div class="terminal-body">
+<pre class="whitespace-pre-wrap text-green-300 text-base leading-relaxed">
+{
+  "security_engineering": [
+    "threat modeling and control design",
+    "security architecture and automation",
+    "hardening systems and services"
+  ],
+  "detection_and_response": [
+    "SIEM engineering and tuning",
+    "log strategy and correlation design",
+    "incident response and analysis"
+  ],
+  "cloud_and_identity": [
+    "M365, Azure, and SaaS security",
+    "identity and access telemetry",
+    "IAM best practices"
+  ],
+  "leadership_and_community": [
+    "mentoring analysts and engineers",
+    "translating risk for leadership",
+    "public speaking and InfoSec outreach"
+  ]
+}
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ ls resources/
+          </div>
+          <div class="terminal-body space-y-6 text-lg">
+            <div>
+              <p class="text-green-300">./security_engineering_checklist</p>
+              <p class="text-gray-200">
+                A working list for engineers building or reviewing controls across environments.
+              </p>
+              <div class="mt-1 flex justify-between items-center text-base">
+                <a href="LINK_TO_RESOURCE_1" class="text-green-300 hover:text-green-400">download</a>
+                <a href="#support" class="text-gray-400 hover:text-green-300 text-sm">donate &gt;</a>
+              </div>
+            </div>
+            <div>
+              <p class="text-green-300">./siem_use_case_template</p>
+              <p class="text-gray-200">
+                A structured way to track detections, mapping, and ownership without overcomplication.
+              </p>
+              <div class="mt-1 flex justify-between items-center text-base">
+                <a href="LINK_TO_RESOURCE_2" class="text-green-300 hover:text-green-400">download</a>
+                <a href="#support" class="text-gray-400 hover:text-green-300 text-sm">donate &gt;</a>
+              </div>
+            </div>
+            <div>
+              <p class="text-green-300">./home_lab_security_playbook</p>
+              <p class="text-gray-200">
+                Guides for setting up a home security lab for continuous learning and testing.
+              </p>
+              <div class="mt-1 flex justify-between items-center text-base">
+                <a href="LINK_TO_RESOURCE_3" class="text-green-300 hover:text-green-400">download</a>
+                <a href="#support" class="text-gray-400 hover:text-green-300 text-sm">donate &gt;</a>
+              </div>
+            </div>
+            <p class="text-sm text-gray-400">
+              Attribution to anomalousem.com is appreciated when used publicly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ tail -n 3 medium_feed.log
+          </div>
+          <div class="terminal-body text-lg space-y-6">
+            <div>
+              <p class="text-green-300">[1] The Real Work of Security Engineering</p>
+              <p class="text-gray-200">
+                Building secure systems is less about firewalls and more about clarity and collaboration.
+              </p>
+              <a href="MEDIUM_ARTICLE_URL_1"
+                 target="_blank" rel="noreferrer"
+                 class="text-green-300 hover:text-green-400 text-sm">
+                open_on_medium
+              </a>
+            </div>
+            <div>
+              <p class="text-green-300">[2] From Noise to Insight</p>
+              <p class="text-gray-200">
+                Reframing detection engineering as an engineering discipline, not a content factory.
+              </p>
+              <a href="MEDIUM_ARTICLE_URL_2"
+                 target="_blank" rel="noreferrer"
+                 class="text-green-300 hover:text-green-400 text-sm">
+                open_on_medium
+              </a>
+            </div>
+            <div>
+              <p class="text-green-300">[3] Humans in the Loop</p>
+              <p class="text-gray-200">
+                Designing processes that keep analysts informed instead of overwhelmed.
+              </p>
+              <a href="MEDIUM_ARTICLE_URL_3"
+                 target="_blank" rel="noreferrer"
+                 class="text-green-300 hover:text-green-400 text-sm">
+                open_on_medium
+              </a>
+            </div>
+            <p class="text-base text-gray-400">
+              More on
+              <a href="https://medium.com/@YOUR_MEDIUM_HANDLE" class="text-green-300 hover:text-green-400">
+                medium.com/@YOUR_MEDIUM_HANDLE
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT -->
+    <section id="support" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ ./support.sh
+          </div>
+          <div class="terminal-body text-lg space-y-4">
+            <p>
+              The resources and writing here are free. If they help you harden systems, improve detections,
+              or support your team, donations are appreciated.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-2">
+              <a href="https://www.buymeacoffee.com/YOUR_HANDLE"
+                 target="_blank" rel="noreferrer"
+                 class="px-4 py-2 border border-green-500 rounded text-green-300 hover:bg-green-500 hover:text-black text-base">
+                buy_me_a_coffee
+              </a>
+              <a href="https://ko-fi.com/YOUR_HANDLE"
+                 target="_blank" rel="noreferrer"
+                 class="px-4 py-2 border border-gray-600 rounded text-gray-200 hover:border-green-400 hover:text-green-300 text-base">
+                ko_fi
+              </a>
+              <a href="https://www.paypal.me/YOUR_HANDLE"
+                 target="_blank" rel="noreferrer"
+                 class="px-4 py-2 border border-gray-600 rounded text-gray-200 hover:border-green-400 hover:text-green-300 text-base">
+                paypal
+              </a>
+            </div>
+            <p class="text-sm text-gray-400">
+              For consulting, workshops, or internal training, use the contact form with details and we’ll have a grown-up conversation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-b border-green-500/40 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="terminal-window">
+          <div class="terminal-header text-green-300 text-lg">
+            emily@anomalousem:~$ ./contact.sh
+          </div>
+          <div class="terminal-body space-y-6 text-lg">
+            <p>
+              Reach out about collaborations, speaking, or advisory work:
+              <span class="text-green-300">hello@anomalousem.com</span>
+            </p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm text-gray-300 mb-1">name</label>
+                <input id="name" name="name" type="text" required
+                       class="w-full bg-black border border-gray-600 rounded px-3 py-2 text-lg text-gray-100 focus:border-green-400 focus:outline-none" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm text-gray-300 mb-1">email</label>
+                <input id="email" name="email" type="email" required
+                       class="w-full bg-black border border-gray-600 rounded px-3 py-2 text-lg text-gray-100 focus:border-green-400 focus:outline-none" />
+              </div>
+              <div>
+                <label for="topic" class="block text-sm text-gray-300 mb-1">topic</label>
+                <select id="topic" name="topic"
+                        class="w-full bg-black border border-gray-600 rounded px-3 py-2 text-base text-gray-100 focus:border-green-400 focus:outline-none">
+                  <option value="general">general hello</option>
+                  <option value="speaking">speaking / events</option>
+                  <option value="resources">resource feedback</option>
+                  <option value="consulting">consulting / advisory</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm text-gray-300 mb-1">message</label>
+                <textarea id="message" name="message" rows="4" required
+                          class="w-full bg-black border border-gray-600 rounded px-3 py-2 text-lg text-gray-100 focus:border-green-400 focus:outline-none"></textarea>
+              </div>
+              <button type="submit"
+                      class="px-6 py-2 border border-green-500 rounded text-lg text-green-300 hover:bg-green-500 hover:text-black">
+                send
+              </button>
+              <p class="text-xs text-gray-500">
+                Handled by a simple form backend. Don’t put secrets here.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-green-500/40 bg-black/90">
+      <div class="mx-auto max-w-5xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-base text-gray-400">
+        <p>&copy; <span id="year"></span> anomalousem.com</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
