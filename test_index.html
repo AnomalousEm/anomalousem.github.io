@@ -44,10 +44,9 @@
     /* Smooth scroll + offset for sticky header */
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 100px; /* adjust if header height changes */
     }
-    :target {
-      scroll-margin-top: 100px;
+    section {
+      scroll-margin-top: 110px; /* keep sections visible under sticky header */
     }
   </style>
 </head>
@@ -74,25 +73,19 @@
           <a href="#contact" class="hover:text-green-400">contact</a>
         </nav>
 
-        <!-- Social + Resume -->
-        <div class="flex items-center gap-4">
-          <div class="flex gap-3 text-green-400">
-            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="LinkedIn">
-              <i data-lucide="linkedin"></i>
-            </a>
-            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="GitHub">
-              <i data-lucide="github"></i>
-            </a>
-            <a href="https://medium.com/@YOUR_MEDIUM_HANDLE" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="Medium">
-              <i data-lucide="book-open-text"></i>
-            </a>
-            <a href="https://x.com/YOUR_TWITTER" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="X">
-              <i data-lucide="twitter"></i>
-            </a>
-          </div>
-          <a href="YOUR_RESUME_URL.pdf"
-             class="px-4 py-2 border border-green-500 text-green-300 rounded hover:bg-green-500 hover:text-black text-base">
-            résumé
+        <!-- Social -->
+        <div class="flex items-center gap-4 text-green-400">
+          <a href="https://www.linkedin.com/in/emily-shader-bb1b40113/" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://github.com/AnomalousEm" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="hhttps://medium.com/@anomalousem" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="Medium">
+            <i data-lucide="book-open-text"></i>
+          </a>
+          <a href="https://x.com/AnomalousEm" target="_blank" rel="noopener" class="social-icon hover:text-green-300" aria-label="X">
+            <i data-lucide="twitter"></i>
           </a>
         </div>
       </div>
@@ -104,7 +97,7 @@
         <div>
           <p class="text-sm text-green-400 mb-3">emily@anomalousem:~$ whoami</p>
           <h1 class="text-5xl text-gray-50 mb-3">Emily Shader</h1>
-          <p class="text-xl text-green-300 mb-6">Cybersecurity Engineer</p>
+          <p class="text-xl text-green-300 mb-6">Security Engineer</p>
           <p class="text-lg text-gray-200 mb-5">
             I’m a security engineer who moves comfortably across detection, cloud, IR, and architecture.
             My focus is on building defenses that work — technically, operationally, and humanly.
@@ -119,7 +112,7 @@
             </a>
             <a href="#blog"
                class="px-4 py-2 border border-green-500 rounded text-base text-green-300 hover:bg-green-500 hover:text-black">
-              tail -f medium.log
+              tail medium.log
             </a>
           </div>
         </div>
@@ -128,10 +121,8 @@
           <div class="terminal-window w-full max-w-sm">
             <div class="terminal-header flex items-center justify-between text-gray-300">
               <span>emily@anomalousem: ~/logo.jpg</span>
-              <span class="text-green-400 text-sm">online</span>
             </div>
             <div class="terminal-body flex flex-col items-center">
-              <!-- Your logo -->
               <img src="anomalousem-logo.jpg"
                    alt="AnomalousEm logo"
                    class="h-48 w-48 rounded-full object-cover mb-4 border-2 border-green-500/70" />
@@ -183,7 +174,7 @@
           <div class="terminal-body space-y-6 text-base">
             <div>
               <p class="text-green-300 text-xl">
-                ./humana — Senior Security Engineer · 20XX–present
+                ./humana — Senior Detection Engineer · 2024–present
               </p>
               <ul class="list-disc list-inside text-gray-200 ml-4 mt-2 space-y-1">
                 <li>Lead cross-domain engineering across detection, cloud, and IR.</li>
@@ -193,7 +184,7 @@
             </div>
             <div>
               <p class="text-green-300 text-xl">
-                ./ibm — Security Pre-Sales Engineer · 20XX–20XX
+                ./ibm — Security Pre-Sales Engineer · 2023–2024
               </p>
               <p class="text-gray-200 ml-4">
                 Partnered with enterprise clients to evaluate and implement IBM security solutions,
@@ -202,7 +193,7 @@
             </div>
             <div>
               <p class="text-green-300 text-xl">
-                ./lge-ku — Security Analyst · 20XX–20XX
+                ./lge-ku — Security Analyst · 2017–2023
               </p>
               <p class="text-gray-200 ml-4">
                 Conducted hands-on monitoring and response in a regulated energy environment,
@@ -252,12 +243,15 @@
     </section>
 
     <!-- RESOURCES -->
+     
     <section id="resources" class="border-b border-green-500/40 py-14">
       <div class="mx-auto max-w-5xl px-6">
         <div class="terminal-window">
           <div class="terminal-header text-green-300 text-lg">
             emily@anomalousem:~$ ls resources/
           </div>
+          <div class="terminal-body space-y-6 text-lg">COMING SOON</div>
+          <!-- UNDER CONSTRUCTION
           <div class="terminal-body space-y-6 text-lg">
             <div>
               <p class="text-green-300">./security_engineering_checklist</p>
@@ -292,6 +286,7 @@
             <p class="text-sm text-gray-400">
               Attribution to anomalousem.com is appreciated when used publicly.
             </p>
+          -->
           </div>
         </div>
       </div>
@@ -305,6 +300,8 @@
             emily@anomalousem:~$ tail -n 3 medium_feed.log
           </div>
           <div class="terminal-body text-lg space-y-6">
+            COMING SOON
+            <!-- UNDER CONSTRUCTION
             <div>
               <p class="text-green-300">[1] The Real Work of Security Engineering</p>
               <p class="text-gray-200">
@@ -338,10 +335,11 @@
                 open_on_medium
               </a>
             </div>
+            -->
             <p class="text-base text-gray-400">
               More on
-              <a href="https://medium.com/@YOUR_MEDIUM_HANDLE" class="text-green-300 hover:text-green-400">
-                medium.com/@YOUR_MEDIUM_HANDLE
+              <a href="https://medium.com/@anomalousem" class="text-green-300 hover:text-green-400">
+                medium.com/@anomalousem
               </a>
             </p>
           </div>
@@ -362,20 +360,10 @@
               or support your team, donations are appreciated.
             </p>
             <div class="flex flex-wrap gap-3 mt-2">
-              <a href="https://www.buymeacoffee.com/YOUR_HANDLE"
+              <a href="https://www.buymeacoffee.com/AnomalousEm"
                  target="_blank" rel="noreferrer"
                  class="px-4 py-2 border border-green-500 rounded text-green-300 hover:bg-green-500 hover:text-black text-base">
                 buy_me_a_coffee
-              </a>
-              <a href="https://ko-fi.com/YOUR_HANDLE"
-                 target="_blank" rel="noreferrer"
-                 class="px-4 py-2 border border-gray-600 rounded text-gray-200 hover:border-green-400 hover:text-green-300 text-base">
-                ko_fi
-              </a>
-              <a href="https://www.paypal.me/YOUR_HANDLE"
-                 target="_blank" rel="noreferrer"
-                 class="px-4 py-2 border border-gray-600 rounded text-gray-200 hover:border-green-400 hover:text-green-300 text-base">
-                paypal
               </a>
             </div>
             <p class="text-sm text-gray-400">
@@ -398,7 +386,7 @@
               Reach out about collaborations, speaking, or advisory work:
               <span class="text-green-300">hello@anomalousem.com</span>
             </p>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+            <form action="https://formspree.io/f/mgvrekrn" method="POST" class="space-y-4">
               <div>
                 <label for="name" class="block text-sm text-gray-300 mb-1">name</label>
                 <input id="name" name="name" type="text" required
